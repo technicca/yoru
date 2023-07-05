@@ -302,6 +302,6 @@ return function(s)
 		screen.primary.top_panel.visible = not vis
 	end)
 
-	client.connect_signal("property::fullscreen", remove_top_panel)
+	client.connect_signal("property::maximized", remove_top_panel)
 	client.connect_signal("request::unmanage", add_top_panel)
 end
